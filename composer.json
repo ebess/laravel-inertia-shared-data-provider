@@ -1,0 +1,34 @@
+{
+  "name": "ebess/laravel-inertia-shared-data-provider",
+  "description": "Provide shared data to inertia js application in laravel",
+  "keywords": [
+    "laravel",
+    "laravel-inertia",
+    "inertia",
+    "inertiajs"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Eduard Bess",
+      "email": "eduard.bess@gmail.com"
+    }
+  ],
+  "require": {
+    "inertiajs/inertia-laravel": "*",
+    "spatie/laravel-package-tools": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ebess\\LaravelInertiaSharedDataProvider\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ebess\\LaravelInertiaSharedDataProvider\\LaravelInertiaSharedDataServiceProvider"
+      ]
+    }
+  }
+}
